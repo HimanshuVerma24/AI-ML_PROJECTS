@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+        body{
+            background-color: #cccc;
+            user-select: none;
+        }
+        *{
+            font-family: sans-serif;
+        }
+        marquee{
+            background-color: red;
+            color: yellow;
+            height: 5vh;
+            font-size: 38px;
+            word-spacing: 3px;
+            line-height: 33px;
+        }
+        h1{
+            background-color: green;
+            color: white;
+        }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+
+    <center><h1>Thank you!</h1></center>
+
+        <marquee scrollamount="20" direction="left">HAVE A Good Day Ahead!!</marquee>
+        <hr>
+        <marquee scrollamount="20" direction="right">VISIT AGAIN!!</marquee>
+    </form>
+</div>
+
+</body>
+</html>

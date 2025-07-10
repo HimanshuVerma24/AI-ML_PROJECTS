@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        th{
+            background-color: lightgreen;
+        }
+        tr{
+            background-color: #cccc;
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Historical Predictions</h1></center>
+
+    <!-- {{ historical_data }} -->
+    <!-- (4, '1', 'Royal Enfield', 1000.0, 121, 350.0, 112049.0) -->
+    <table border="1" cellspacing="0" align="center" cellpadding="10">
+        <tr>
+            <th>Owner Type</th>
+            <th>Brand Name</th>
+            <th>Kms Driven</th>
+            <th>Age</th>
+            <th>Power In CC</th>
+            <th>Overall Price</th>
+        </tr>
+        {% for prediction in historical_data %}
+        <tr>
+            <td>{{ prediction[1] }}</td>
+            <td>{{ prediction[2] }}</td>
+            <td>{{ prediction[3] }}</td>
+            <td>{{ prediction[4] }}</td>
+            <td>{{ prediction[5] }}</td>
+            <td>{{ prediction[0] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
